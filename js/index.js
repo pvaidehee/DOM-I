@@ -114,15 +114,3 @@ headings.forEach((things) => {
   things.style.fontFamily = 'Rowdies'
   things.style.color = 'lightblue'
 });
-
-// const newFooLink = document.createElement('a') 
-// newFooLink.textContent = 'Foo'
-// newFooLink.href = '#'
-// nav.prependChild(newFooLink)
-// consele.log(newFooLink)
-
-// const newBarLink = document.createElement('a')
-// newBarLink.textContent = 'Bar'
-// newBarLink.href = '#'
-// nav.appendChild(newBarLink)
-// console.log(newBarLink)
