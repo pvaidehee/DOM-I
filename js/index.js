@@ -105,8 +105,8 @@ item.style.fontSize = '1.5rem'
 const all = document.querySelectorAll("body");
 all.forEach((items) => {
   items.style.fontFamily = 'Dancing Script'
-  items.style.color = 'plum'
-  items.style.background = "lavenderblush"
+  items.style.color = '#ff8fad'
+  items.style.background = "#fff0f0"
 });
 
 const headings = document.querySelectorAll("h1, h2, h3, h4, h5");
