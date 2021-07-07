@@ -40,3 +40,77 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+document.title = "Great Idea!"
+const nav = document.querySelector(".container nav")
+
+const navLinks = document.querySelectorAll("nav a")
+console.log(navLinks);
+
+navLinks[0].textContent = "Services"
+navLinks[1].textContent = "Product"
+navLinks[2].textContent = "Vision"
+navLinks[3].textContent = "Features"
+navLinks[4].textContent = "About"
+navLinks[5].textContent = "Contact"
+
+const ctaTexth1 = document.querySelector(".cta-text h1")
+ctaTexth1.innerHTML = "DOM </br> is </br> Awesome."
+
+const ctaButton = document.querySelector(".cta-text button")
+ctaButton.textContent = "Get Started"
+ctaButton.style.fontFamily = 'Rowdies'
+ctaButton.style.color = 'lightpink'
+ctaButton.style.borderColor = 'indianred'
+ctaButton.style.background = 'lavender'
+
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.src = 'img/header-img.png'
+
+const topContentTitle = document.querySelectorAll('.top-content h4')
+const topContentText = document.querySelectorAll('.top-content p')
+topContentTitle[0].textContent = 'Features'
+topContentText[0].textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+topContentTitle[1].textContent = 'About'
+topContentText[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis'
+
+const middleImg = document.querySelector('#middle-img')
+middleImg.src = "img/mid-page-accent.jpg"
+
+const bottomContentTitle = document.querySelectorAll('.bottom-content h4')
+const bottomContentText = document.querySelectorAll('.bottom-content p')
+bottomContentTitle[0].textContent = 'Services'
+bottomContentText[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+bottomContentTitle[1].textContent = 'Product'
+bottomContentText[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+bottomContentTitle[2].textContent = 'Vision'
+bottomContentText[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, ininterdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+const contactTitle = document.querySelector('.contact h4')
+const contactText = document.querySelectorAll('.contact p')
+contactTitle.textContent = 'Contact'
+contactText[0].innerHTML = '123 Way 456 Street </br> Somewhere, USA'
+contactText[1].textContent = '1 (888) 888-8888'
+contactText[2].textContent = 'sales@greatidea.io'
+
+const footerText = document.querySelector('footer p')
+footerText.textContent = 'Copyright Great Idea! 2018'
+
+navLinks.forEach((item) => {
+item.style.color = 'lightsalmon'
+item.style.fontFamily = 'Indie Flower'
+item.style.fontSize = '1.5rem'
+});
+
+const all = document.querySelectorAll("body");
+all.forEach((items) => {
+  items.style.fontFamily = 'Dancing Script'
+  items.style.color = '#ff8fad'
+  items.style.background = "#fff0f0"
+});
+
+const headings = document.querySelectorAll("h1, h2, h3, h4, h5");
+headings.forEach((things) => {
+  things.style.fontFamily = 'Rowdies'
+  things.style.color = 'lightblue'
+});
